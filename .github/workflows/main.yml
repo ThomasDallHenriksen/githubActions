@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # name: Linting
 
 # on:
@@ -27,3 +28,6 @@
 
 #       - name: Run linter
 #         run: npm run lint
+=======
+
+>>>>>>> 9fdc8f56c597478a67f7e212b9bfe0092d52d253
