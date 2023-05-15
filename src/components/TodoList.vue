@@ -17,7 +17,7 @@
       </ul>
 
   </template>
-  <!-- hej med dig Kim -->
+  <!-- hej med dig Kim Le -->
   
 
 <script>
