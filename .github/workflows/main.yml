@@ -1,22 +1,13 @@
-name: Code Monitoring
-
-on:
-  push:
-    branches:
-      - main
-
+name: learn-github-actions
+run-name: ${{ github.actor }} is learning GitHub Actions
+on: [push]
 jobs:
-  lint:
-    name: Lint Code
+  check-bats-version:
     runs-on: ubuntu-latest
-    
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
-      
-    - name: Run Linter
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'
-    - run: npm install # or your package manager command
-    - run: npm run lint # or your linting command
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - run: npm install -g bats
+      - run: bats -v
